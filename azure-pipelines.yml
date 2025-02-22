@@ -1,0 +1,81 @@
+# Docker
+# Build a Docker image 
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+
+resources:
+- repo: self
+
+variables:
+  tag: '$(Build.BuildId)'
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:  
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: Test
+      enabled: "false"
+      inputs:
+        command: 'test'
+        projects: 'TelegramPartHook.Tests/TelegramPartHook.Tests.csproj'
+        arguments: '-c Release'    
+    - task: Docker@2
+      displayName: Login to Docker Hub
+      inputs:
+        command: login
+        containerRegistry: 'Docker Registry rogimnazario'
+    - task: Docker@2
+      condition: and(succeeded(), eq(variables.isMain, false))
+      displayName: DEBUG Build
+      inputs:
+        command: 'build'
+        containerRegistry: 'Docker Registry rogimnazario'
+        repository: 'rogimnazario/telegramparthook'
+        Dockerfile: '**/Dockerfile'
+        tags: |
+          $(Build.BuildId)
+          latest
+        arguments: --build-arg build_mode=Release --build-arg AdminChatId=$(AdminChatId) --build-arg AdminMail=$(AdminMail) --build-arg Users=$(Users)
+    - task: Docker@2
+      condition: and(succeeded(), eq(variables.isMain, false))
+      displayName: DEBUG Sending to Docker Hub
+      inputs:
+        containerRegistry: 'Docker Registry rogimnazario'
+        repository: 'rogimnazario/telegramparthook'
+        command: 'push'
+        Dockerfile: '**/Dockerfile'
+        tags: |
+          $(Build.BuildId)
+          latest   
+    - task: Docker@2
+      condition: and(succeeded(), eq(variables.isMain, true))
+      displayName: RELEASE Build
+      inputs:
+        command: 'build'
+        containerRegistry: 'Docker Registry rogimnazario'
+        repository: 'rogimnazario/telegramparthook'
+        Dockerfile: '**/Dockerfile'
+        tags: |
+          $(Build.BuildId)
+          latest
+        arguments: --build-arg build_mode=Release --build-arg AdminChatId=$(AdminChatId) --build-arg AdminMail=$(AdminMail) --build-arg Users=$(Users) --build-arg DropboxToken=$(DropboxToken)
+    - task: Docker@2
+      condition: and(succeeded(), eq(variables.isMain, true))
+      displayName: RELEASE Sending to Docker Hub
+      inputs:
+        containerRegistry: 'Docker Registry rogimnazario'
+        repository: 'rogimnazario/telegramparthook'
+        command: 'push'
+        Dockerfile: '**/Dockerfile'
+        tags: |
+          $(Build.BuildId)
+          latest

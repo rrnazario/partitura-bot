@@ -1,0 +1,67 @@
+{
+  "responseId": "f6e66229-fbeb-48cc-94bf-2a1bacfbb5b3-d3dc5474",
+  "queryResult": {
+    "queryText": "/remover 0",
+    "parameters": {
+      "busca": ["/remover 0"]
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [{
+      "image": {
+        "imageUri": "@speech"
+      },
+      "platform": "TELEGRAM"
+    }],
+    "outputContexts": [{
+      "name": "projects/buscadorpartiturahml-yu9p/agent/sessions/e3e29bdb-69e1-377a-a03e-16223f6a193d/contexts/__system_counters__",
+      "parameters": {
+        "no-input": 0.0,
+        "no-match": 0.0,
+        "busca": ["/remover 0"],
+        "busca.original": ["/remover 0"]
+      }
+    }],
+    "intent": {
+      "name": "projects/buscadorpartiturahml-yu9p/agent/intents/9df9b53b-e94e-4321-b7c1-2a5720e79879",
+      "displayName": "Busca Intent",
+      "endInteraction": true
+    },
+    "intentDetectionConfidence": 1.0,
+    "languageCode": "pt-br"
+  },
+  "originalDetectIntentRequest": {
+    "source": "telegram",
+    "payload": {
+      "data": {
+        "callback_query": {
+          "data": "{0}",
+          "message": {
+            "from": {
+              "username": "BuscaPartHmlBot",
+              "id": "1487079543",
+              "is_bot": true,
+              "first_name": "Buscador de Partituras HML"
+            },
+            "text": "Choose which remember you would like to remove:",
+            "chat": {
+              "type": "private",
+              "id": "{1}"
+            },
+            "message_id": "4511",
+            "date": "1665909070"
+          },
+          "from": {
+            "first_name": "Rogim",
+            "language_code": "en",
+            "last_name": "Nazário",
+            "username": "rrnazario",
+            "id": "{1}"
+          },
+          "id": "386089245553762322"
+        },
+        "update_id": "594868117"
+      }
+    }
+  },
+  "session": "projects/buscadorpartiturahml-yu9p/agent/sessions/e3e29bdb-69e1-377a-a03e-16223f6a193d"
+}

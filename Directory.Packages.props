@@ -1,0 +1,59 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.ML.DataView" Version="3.0.1" />
+    <PackageVersion Include="Microsoft.ML" Version="3.0.1" />
+    <PackageVersion Include="Microsoft.ML.ImageAnalytics" Version="3.0.1" />
+    <PackageVersion Include="Microsoft.ML.Vision" Version="3.0.1" />
+    <PackageVersion Include="Nanoid" Version="3.1.0" />
+    <PackageVersion Include="SciSharp.TensorFlow.Redist" Version="2.16.0" />
+    <PackageVersion Include="MongoDB.Bson" Version="3.1.0" />
+    <PackageVersion Include="MongoDB.Driver" Version="3.1.0" />
+    <PackageVersion Include="Moq" Version="4.20.70" />
+    <PackageVersion Include="MediatR" Version="12.2.0" />
+    <PackageVersion Include="MediatR.Contracts" Version="2.0.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.0" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.2.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageVersion Include="Light.GuardClauses" Version="11.0.0" />
+    <PackageVersion Include="HtmlAgilityPack" Version="1.11.61" />
+    <PackageVersion Include="pix-payload-generator.net" Version="1.0.21" />
+    <PackageVersion Include="QRCoder" Version="1.5.1" />
+    <PackageVersion Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageVersion Include="Telegram.Bot" Version="19.0.0" />
+    <PackageVersion Include="VideoLibrary" Version="3.2.3" />
+    <PackageVersion Include="Xabe.FFmpeg" Version="5.2.6" />
+    <PackageVersion Include="FluentAssertions" Version="6.12.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageVersion Include="xunit" Version="2.8.1" />
+    <PackageVersion Include="Docker.DotNet" Version="3.125.15" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageVersion Include="System.Net.Http" Version="4.3.4" />
+    <PackageVersion Include="xunit.extensibility.core" Version="2.8.1" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.1" />
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="7.6.0" />
+    <PackageVersion Include="Dropbox.Api" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageVersion Include="Serilog" Version="0.1.6" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageVersion Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.Swagger" Version="6.6.2" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.6.2" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.6.2" />
+    <PackageVersion Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageVersion Include="itext7" Version="8.0.4" />
+    <PackageVersion Include="itext7.bouncy-castle-adapter" Version="8.0.4" />
+    <PackageVersion Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+    <PackageVersion Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.6" />
+  </ItemGroup>
+</Project>

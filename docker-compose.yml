@@ -1,0 +1,25 @@
+services:
+  api:
+    container_name: 'api'
+    image: 'partiturabot-api'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '9080:80'
+    depends_on:
+      - 'postgres'
+    profiles: ["api"]
+
+  postgres:
+    ports:
+      - '55123:5432'
+    container_name: db
+    image: 'postgres:latest'
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=partiturabot
+      - POSTGRES_PASSWORD=partiturabot
+      - POSTGRES_DB=partiturabot
+    profiles: ["infra", "api"]

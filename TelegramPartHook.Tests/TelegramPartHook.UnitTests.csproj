@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SampleFiles\SampleImageFile.jpeg" />
+    <None Remove="SampleFiles\SamplePDFFile.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SampleFiles\SampleImageFile.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleFiles\SamplePDFFile.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio">    
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TelegramPartHook\TelegramPartHook.csproj" />
+    <ProjectReference Include="..\TelegramPartHook.Application\TelegramPartHook.Application.csproj" />
+    <ProjectReference Include="..\TelegramPartHook.Domain\TelegramPartHook.Domain.csproj" />
+    <ProjectReference Include="..\TelegramPartHook.Infrastructure\TelegramPartHook.Infrastructure.csproj" />
+    <ProjectReference Include="..\TelegramPartHook.ML\TelegramPartHook.ML.csproj" />
+    <ProjectReference Include="..\TelegramPartHook.Tests.Core\TelegramPartHook.Tests.Core.csproj" />
+  </ItemGroup>
+
+</Project>

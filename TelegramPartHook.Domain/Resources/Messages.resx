@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbortedSuccessfully" xml:space="preserve">
+    <value>Search aborted successfully.</value>
+  </data>
+  <data name="BeginningConversion" xml:space="preserve">
+    <value>Starting conversion...</value>
+  </data>
+  <data name="CannotDownloadVideo" xml:space="preserve">
+    <value>{0}, I can't download this audio right now. Try again later!</value>
+  </data>
+  <data name="FailedToDefineRemember" xml:space="preserve">
+    <value>Unable to define a remember for the search '{0}' now. Try again later!</value>
+  </data>
+  <data name="FollowUsInstagram" xml:space="preserve">
+    <value>Follow us on Instagram!</value>
+  </data>
+  <data name="HereSomeSuggestions" xml:space="preserve">
+    <value>May I suggest some searches? Click in some bellow button</value>
+  </data>
+  <data name="MonitorForMe" xml:space="preserve">
+    <value>Monitor if something appears</value>
+  </data>
+	<data name="SendSuggestion" xml:space="preserve">
+    <value>Send request or suggestion</value>
+  </data>
+	<data name="WelcomeToVip" xml:space="preserve">
+    <value>Welcome to the VIP plan {0}!\nFirst of all thank you very much for trusting our work.\nClick the button to see all your benefits.</value>
+  </data>
+	<data name="SeeMyVIPBenefits" xml:space="preserve">
+    <value>See my benefits</value>
+  </data>
+	<data name="NotFoundMessage1" xml:space="preserve">
+    <value>I am sorry {0}, I did not find anything! If your search has accent, please try without it! Doubts? Message us</value>
+  </data>
+  <data name="NotFoundMessage2" xml:space="preserve">
+    <value>Sorry {0}, nothing here! Check if you typed correctly. If you put the artist name, try search without it!</value>
+  </data>
+  <data name="NotFoundMessage3" xml:space="preserve">
+    <value>Ouch {0}, no success 😕\nIf there is some contribution from your side, send it to us.</value>
+  </data>
+  <data name="NotFoundMessage4" xml:space="preserve">
+    <value>Sorry {0}, 0 results for your search!\nThere it goes a tip: does either the song or the artist has accent on its name? If yes, try put it! :)</value>
+  </data>
+  <data name="NotVipUser" xml:space="preserve">
+    <value>You are not a VIP user. To get this privilege, perform the following PIX and then send a message to {0}.\n\nCopy-paste code 👇🏾</value>
+  </data>
+  <data name="RememberFound" xml:space="preserve">
+    <value>Hey {0}! I was looking here and seems that I found some results for your search  '{1}' from {2}!\n\nI'll send it to you now 👇🏾</value>
+  </data>
+  <data name="RememberNumberExceeded" xml:space="preserve">
+    <value>You already reached out the free remembers amount. Consider becoming a VIP member to have unlimited remembers\n\nPay the above PIX and then send a message to {0}.\n\nTo manage your reminders, send /lembretes</value>
+  </data>
+  <data name="ReminderDefined" xml:space="preserve">
+    <value>Remember for the search '{0}' successfully registered!\nTo manage your reminders, send /lembretes</value>
+  </data>
+  <data name="SearchingMessage1" xml:space="preserve">
+    <value>Searching... (If I don't response in 1 minute or more, search it again!)</value>
+  </data>
+  <data name="SearchingMessage2" xml:space="preserve">
+    <value>On the search! Hold on! (If I don't response in 1 minute or more, search it again!)</value>
+  </data>
+  <data name="SearchingMessage3" xml:space="preserve">
+    <value>Searching! Warming the engines... (If I don't response in 1 minute or more, search it again!)</value>
+  </data>
+  <data name="SearchingSuggestion" xml:space="preserve">
+    <value>Searching for suggestion '{0}'...</value>
+  </data>
+  <data name="SeeYou" xml:space="preserve">
+    <value>To manage your reminders, send /lembretes\n\nSee you!</value>
+  </data>
+  <data name="SuccessMessage1" xml:space="preserve">
+    <value>Success! Thanks for use our services. I hope that is being useful for you and your friends. If want to support us, please consider do a PIX for our key: *rrnazario@gmail.com* :)</value>
+  </data>
+  <data name="SuccessMessage2" xml:space="preserve">
+    <value>Success! Thanks for use our services. I hope that is being useful for you and your friends. Follow us on Instagram, click on the button bellow.</value>
+  </data>
+  <data name="SuccessMessage3" xml:space="preserve">
+    <value>There it is! I hope that the results being whose you have expected! If want to support us, please consider do a PIX for our key: *rrnazario@gmail.com*</value>
+  </data>
+  <data name="SuccessMessage4" xml:space="preserve">
+    <value>There you go! I hope that the results being whose you have expected! If want to support us, please consider do a PIX for our key: *rrnazario@gmail.com*</value>
+  </data>
+  <data name="SuccessMessage5" xml:space="preserve">
+    <value>Done! I hope that the results being whose you have expected! Follow us on Instagram, click on the button bellow. :)</value>
+  </data>
+  <data name="TooLongVideo" xml:space="preserve">
+    <value>{0} this audio is too big and sadly I can't help you on this.</value>
+  </data>
+  <data name="TooSmallTerm" xml:space="preserve">
+    <value>You searched for a too small term. Try searching a bigger one.</value>
+  </data>
+  <data name="UnableSendVIPInfo" xml:space="preserve">
+    <value>Unable to get the VIP information. Send a message to {0}.</value>
+  </data>
+  <data name="Unsubscribed" xml:space="preserve">
+    <value>Okay ;(\n\nSuccessfully unsubscribed.</value>
+  </data>
+  <data name="VideoDownloaded" xml:space="preserve">
+    <value>Ready {0}! There it is the mp3 of the song *{1}* 👇🏾</value>
+  </data>
+  <data name="WarningManyMessages" xml:space="preserve">
+    <value>We will send {0} files. Send */abortar* to cancel.</value>
+  </data>
+  <data name="WeAreUnderMaintenance" xml:space="preserve">
+    <value>At the moment, we are under maintenance. Try again later.</value>
+  </data>
+  <data name="ConfirmRememberExclusion" xml:space="preserve">
+    <value>Confirm the remember *'{0}'* exclusion?</value>
+  </data>
+  <data name="ChoseRemember" xml:space="preserve">
+    <value>Choose which remember you would like to remove:</value>
+  </data>
+	<data name="SendAdminMessage" xml:space="preserve">
+    <value>Then send your message (or click /cancelar)</value>
+  </data>
+  <data name="OperationFinalized" xml:space="preserve">
+    <value>Operation completed successfully.</value>
+  </data>
+  <data name="ThereAreNoRemembers" xml:space="preserve">
+    <value>You haven't set any reminders so far.</value>
+  </data>
+  <data name="RememberSuccessfullyRemoved" xml:space="preserve">
+    <value>Remember *{0}* successfully removed!</value>
+  </data>
+  <data name="DownloadAsPDF" xml:space="preserve">
+    <value>Download last search as PDF</value>
+  </data>
+  <data name="MakeMeVIP" xml:space="preserve">
+    <value>Upgrade to VIP</value>
+  </data>
+	<data name="MessageSuccessfullySentToAdmin" xml:space="preserve">
+    <value>Message sent to admin successfully!</value>
+  </data>
+	<data name="AddRepertoireViaTelegram" xml:space="preserve">
+    <value>Add to repertoire</value>
+  </data>
+  <data name="Contribute" xml:space="preserve">
+    <value>Contribute with my music sheets</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>It isn't a music sheet</value>
+  </data>
+  <data name="ReportedSuccessfully" xml:space="preserve">
+    <value>File reported successfully. Thanks for your contribution!</value>
+  </data>
+
+</root>

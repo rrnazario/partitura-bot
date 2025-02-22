@@ -1,0 +1,29 @@
+﻿@name = "Busca"
+POST https://localhost:51123/api/Partitura/Busca
+Content-Type: application/json
+Authorization: {{authorization}}
+
+{
+  "originalDetectIntentRequest": {
+    "payload": {
+      "data": {
+        "from": {
+          "last_name": "Nazário",
+          "username": "rrnazario",
+          "language_code": "en",
+          "first_name": "Rogim",
+          "id": "{{admin_id}}"
+        },
+        "text": "sambarril",
+        "message_id": "276917",
+        "chat": {
+          "type": "private",
+          "id": "{{admin_id}}"
+        },
+        "date": "1657217982"
+      }
+    }
+  }
+}
+
+###

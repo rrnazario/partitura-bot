@@ -1,0 +1,59 @@
+﻿{
+"responseId": "f0654186-d4c6-4fea-b51a-5e132ffb5ebb-aebbc26f",
+"queryResult": {
+  "queryText": "{0}",
+  "action": "buscador-partituras",
+  "parameters": {
+    "busca": ["sambarril"]
+  },
+  "allRequiredParamsPresent": true,
+  "fulfillmentMessages": [{
+    "image": {
+      "imageUri": "@speech"
+    },
+    "platform": "TELEGRAM"
+  }, {
+    "text": {
+      "text": [""]
+    }
+  }],
+  "outputContexts": [{
+    "name": "projects/buscadorpartitura/agent/sessions/e3e29bdb-69e1-377a-a03e-16223f6a193d/contexts/__system_counters__",
+    "parameters": {
+      "no-input": 0.0,
+      "no-match": 0.0,
+      "busca": ["sambarril"],
+      "busca.original": ["sambarril"]
+    }
+  }],
+  "intent": {
+    "name": "projects/buscadorpartitura/agent/intents/19ed0043-7d81-4a6e-9743-381088053ec2",
+    "displayName": "busca-intent",
+    "endInteraction": true
+  },
+  "intentDetectionConfidence": 1.0,
+  "languageCode": "pt-br"
+},
+"originalDetectIntentRequest": {
+  "source": "telegram",
+  "payload": {
+    "data": {
+      "from": {
+        "last_name": "Nazário 🇧🇷🇪🇸",
+        "username": "rrnazario",
+        "language_code": "en",
+        "first_name": "Rogim",
+        "id": "{1}"
+      },
+      "text": "{0}",
+      "message_id": "276917",
+      "chat": {
+        "type": "private",
+        "id": "{1}"
+      },
+      "date": "1657217982"
+    }
+  }
+},
+"session": "projects/buscadorpartitura/agent/sessions/e3e29bdb-69e1-377a-a03e-16223f6a193d"
+}
